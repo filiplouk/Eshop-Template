@@ -1,0 +1,60 @@
+<%- include("partials/header") -%>
+
+<div class="container product_page ">
+  <div class="row product_row">
+    <div class="col-md-3">
+
+    </div>
+    <div class="col-md-4 product_img">
+      <img src="images/products/<%=item.name%>" alt="product_image">
+    </div>
+    <div class="col-md-5 ">
+      <form  action="/item/cloth" method="post">
+        <div class="description">
+          <div class="title">
+            <h5 name="label"><%=item.label%></h5>
+            <h5 style="color:grey;" name="price">$<%=item.price%></h5>
+            <input type="hidden" name="id" value=<%=item._id%>>
+          </div>
+
+          <div class="discount_message">
+
+          </div>
+
+          <div class="item_information">
+            <p>Colour: black</p>
+            <p>Season: <%=item.season%></p>
+            <p>Size:</p>
+            <select class="form-control" name="size">
+              <option>XS</option>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+            </select>
+          </div>
+          <div class="button_info">
+            <button type="submit" class="btn  pl-5 pr-5">ADD TO BAG</button>
+
+          </div>
+      </form>
+
+
+        <div class="item_information delivery_message">
+            <p><i class="fa-solid fa-truck-fast"></i>  Free Delivery</p>
+            <p><i class="fa-solid fa-dolly"></i>  Free Returns</p>
+
+       </div>
+
+
+
+
+      </div>
+    </div>
+
+
+  </div>
+
+</div>
+
+<%- include("partials/footer") -%>

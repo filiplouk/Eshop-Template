@@ -1,0 +1,140 @@
+<%- include("partials/header") -%>
+
+<div class="order container-fluid ">
+  <form  method="post" action="/cart/order" >
+    <div class="row">
+
+      <div class="col-md-6 credentials">
+        <h4>Delivery Details</h4>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <input required name="name" class="form-control" id="inputName" placeholder="Name">
+          </div>
+          <div class="form-group col-md-6">
+            <input required name="surname" class="form-control" id="inputSurname" placeholder="Surname">
+          </div>
+        </div>
+        <div class="form-group">
+          <input required type="email" name="email" class="form-control" id="inputEmail" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <input required type="text" name="address" class="form-control" id="inputAddress" placeholder="Address">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-6">
+            <label for="floor">Floor</label>
+            <select name="floor" class="form-control" id="floor" style="color:grey">
+              <option>-1</option>
+              <option selected>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group col-6">
+            <label for="houseType">Type</label>
+            <select name="houseType" class="form-control" id="houseType" style="color:grey">
+              <option>Home</option>
+              <option>Work</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+        </div>
+        <div class="form-row">
+          <div class="form-group col-3">
+            <select name="prefix" class="form-control" id="prefix">
+
+            </select>
+
+          </div>
+          <div class="form-group col-9">
+            <input name="mobile" class="form-control" type="tel" id="tel" placeholder="Mobile">
+
+          </div>
+
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-12">
+            <label for="notes">Notes</label>
+            <textarea name="notes" class="form-control" id="notes" rows="5" cols="60"></textarea>
+
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+      <div class="col-md-4 summary">
+        <div class="row">
+          <div class="col-12">
+            <p>Estimated Arrival</p>
+            <sup><%=arrivalDate.fiveDate%> - <%=arrivalDate.sevenDate%></sup>
+            <hr>
+            <p>Items</p>
+            <% for (let z=0; z<cart.length; z++){ %>
+            <div class="row">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-6">
+                    <sup><%= cart[z].label %> / <%=cart[z].size%></sup>
+
+                  </div>
+                  <div class="col-6">
+                    <sup>x<%= cart[z].quantity %></sup>
+
+
+                  </div>
+
+
+                </div>
+              </div>
+
+            </div>
+
+
+
+
+            <% } %>
+
+
+
+            <hr>
+            <p>Product Price</p>
+            <sup><%=totalPrice%> $</sup>
+            <hr>
+            <p>Shipping</p>
+            <sup>Free Shipping</sup>
+            <hr>
+            <p><strong>Total Price</strong> </p>
+            <p> <strong ><%= totalPrice %> $</strong></p>
+            <button type="submit" class="btn sendOrder">COMPLETE ORDER</button>
+
+
+
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+    </div>
+  </form>
+
+</div>
+
+
+
+
+<%- include("partials/footer") -%>

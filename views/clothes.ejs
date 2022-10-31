@@ -1,0 +1,62 @@
+<%- include("partials/header") -%>
+
+<!-- Clothes -->
+
+<div class="container-fluid">
+  <div class="row products">
+    <% products.forEach(function(item){%>
+    <div class="card pr-0  border-0 col-md-3 col-6 mb-2">
+      <a href="/item/<%=item._id%>">
+        <div >
+          <img src="images/products/<%=item.name%>">
+          <div class="card-body">
+            <h5 class="card-title" style="font-size:1rem; font-weight:600;"><%=item.label%></h5>
+            <p class="card-text" style="font-size:0.9rem; "><%=item.price%> $</p>
+            <p class="card-text blockquote-footer">CODE:12345</p>
+
+          </div>
+        </div>
+
+      </a>
+
+    </div>
+
+
+    <%});%>
+  </div>
+
+  <!-- Pagination       -->
+
+  <div class="row pages_nav">
+    <div class="col-12">
+      <nav>
+        <ul class="pagination justify-content-end">
+          <li class="page-item"><a class="page-link text-secondary" href="<%=prevPage%>">Previous</a></li>
+          <li class="page-item"><a class="page-link text-secondary <%=active[0]%>" href="/clothes/page1">1</a></li>
+          <% if (numberOfPages>1){ %>
+          <% for (let i=2; i<numberOfPages+1; i++){ %>
+          <li class="page-item"><a class="page-link text-secondary <%=active[i-1]%>" href="/clothes/page<%=i%>"><%=i%></a></li>
+          <%}%>
+            <% } %>
+
+
+          <li class="page-item"><a class="page-link text-secondary" href="<%=nextPage%>">Next</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+
+
+
+
+  <hr style="margin-top:4%;">
+
+
+</div>
+
+
+
+
+
+<%- include("partials/footer") -%>

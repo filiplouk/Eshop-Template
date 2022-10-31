@@ -1,0 +1,447 @@
+/* ------------ Navigation Bar --------------------- */
+.navbar {
+  background-color: white;
+}
+
+.navbar-brand {
+  margin-left: 5%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+.navbar-nav {
+  margin-left: 53.5%;
+}
+
+.nav-item {
+  margin-right: 40px;
+}
+
+.nav-item#basket {
+  margin-right: 0;
+}
+
+/* ---------------------Shopping cart number of items--------------------------------- */
+#badge {
+  border-radius: 9px;
+  position: relative;
+  bottom: 9px;
+  right: 8px;
+  background-color: #829460;
+  color: white;
+}
+
+/* ---------------Body of Website Home Page and General------------------------- */
+/* GENERAL */
+img {
+  height: 100%;
+  width: 100%;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* --------------------------------Carousel----------------------------------------------------- */
+
+
+.caption {
+  position: absolute;
+  bottom: 55%;
+  left: 5%;
+  text-align: center;
+  color: white;
+  font-style: italic;
+}
+
+
+
+/* ------------------------------------Season Collection Segment------------------------- */
+
+.collection{
+  margin-bottom: 5%;
+}
+.season{
+  text-align: center;
+}
+
+.seasonCollectionCaption{
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  top:20%;
+
+}
+
+.seasonCollectionImage img{
+  width: 80%;
+
+}
+
+.newSeasonText{
+  margin-top: 7%;
+  text-align: left;
+  position: relative;
+  left: 17%;
+  width:60%;
+  line-height: 2;
+}
+
+.newSeasonText button{
+  color: white;
+  background-color: #829460;
+  border-radius: 0;
+  position: relative;
+  top:1%;
+}
+
+/* ------------------------- CATEGORIES HOME PAGE ---------------------------- */
+@media only screen and (min-width: 576px) {
+  .col-sm-6.left {
+    padding-right: 0.5%;
+  }
+
+  .col-sm-6.right {
+    padding-left: 0.5%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .col-sm-6.right {
+    margin-top: 1%;
+  }
+
+  .caption {
+    position: absolute;
+    bottom: 30%;
+    left: 5%;
+    text-align: center;
+    color: white;
+    font-style: italic;
+  }
+}
+
+
+/* ---------------------------------CLOTHES PAGE ----------------------------------- */
+.products {
+  margin-top: 20%;
+}
+
+.card {
+  text-align: center;
+}
+
+.card img {
+  width: 60%;
+}
+
+.card a {
+  color: inherit;
+}
+
+.card a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.pages_nav {
+  margin-top: 2%;
+}
+
+/* filters */
+.filters {
+  margin-top: 8%;
+  background-color: #FFF7E9;
+}
+
+/* Large Screen */
+@media only screen and (min-width:756px) {
+  .products {
+    margin-top: 8%;
+  }
+}
+
+/* ------------------------------------Single Product Page------------------------------------- */
+.product_page {
+  margin-top: 8%;
+  margin-bottom: 10%;
+}
+
+
+.description {
+  text-align: center;
+  margin-top: 5%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 85%;
+}
+
+.item_information {
+  display: inline-block;
+  text-align: left;
+  margin-top: 8%;
+}
+
+.button_info {
+  margin-top: 10%;
+  display: block;
+}
+
+.button_info button {
+  color: white;
+  background-color: #829460;
+  border-radius: 0;
+}
+
+.delivery_message {
+  padding-top: 3%;
+  padding-left: 8%;
+  padding-right: 8%;
+  border: 1px solid #D8D8D8;
+}
+
+@media only screen and (max-width:756px) {
+  .product_page {
+    margin-top: 20%;
+  }
+
+  .product_img {
+    text-align: center;
+  }
+
+  .product_page img {
+    width: 70%;
+  }
+}
+
+/* -----------------------------------Empty Cart Page ------------------------------------ */
+.empty_cart {
+  text-align: center;
+  margin: 14% auto;
+}
+
+.empty_cart i {
+  margin-top: 3%;
+}
+
+@media only screen and (max-width: 576px) {
+  .empty_cart {
+    margin: 22% auto;
+  }
+}
+
+/* -----------------------------------------Cart with items Page------------------------------------------- */
+.cart {
+  text-align: center;
+  margin: 14% auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.item {
+  margin: 2% auto;
+}
+
+.row_1 {
+  border-left: 1px solid #EDDBC0;
+  border-top: 1px solid #EDDBC0;
+  border-bottom: 1px solid #EDDBC0;
+  padding-top: 1%;
+}
+
+.row_2 {
+  border-left: 1px solid #EDDBC0;
+  border-bottom: 1px solid #EDDBC0;
+  padding-top: 4%;
+  text-align: center;
+  color: #829460;
+}
+
+.icon {
+  margin-top: 4%;
+  position: relative;
+  left: 1%;
+}
+
+.row_2 img {
+  width: 30%;
+  border-radius: 5px;
+  position: relative;
+  left: 1%;
+  bottom: 32%;
+}
+
+.right {
+  border-right: 1px solid #EDDBC0;
+}
+
+.quantity {
+  text-align: center;
+}
+
+.completeOrderButton {
+  position: relative;
+  margin-top: 5%;
+  left: 36%;
+}
+
+.completeOrderButton button {
+  color: white;
+  background-color: #829460;
+  border-radius: 0;
+}
+
+@media only screen and (max-width: 576px) {
+  .row_1 {
+    visibility: hidden;
+  }
+
+  .row_2 img {
+    width: 22%;
+    position: relative;
+    bottom: 20%;
+  }
+
+  .row_2 {
+    border-bottom: 1px solid #F2F2F2;
+  }
+
+  .final_price {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width:992px) {
+  .completeOrderButton {
+    position: inherit;
+    margin-top: 5%;
+    text-align: center;
+  }
+}
+
+/* ----------------------Order Page--------------------------------------------- */
+.order {
+  margin-top: 6%;
+}
+
+.order .row {
+  padding: 3%;
+}
+
+/* Order Details */
+.order .credentials {
+  background-color: white;
+  padding: 2%;
+  border-radius: 4px;
+  /* color: #647E68; */
+  color: #2C3639;
+}
+
+.order .credentials h4 {
+  margin-bottom: 6%;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Summary */
+.order .summary {
+  font-family: "Montserrat", sans-serif;
+  /* color: #647E68; */
+  color: #2C3639;
+  padding-top: 6%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+  position: relative;
+  left: 10%;
+  font-size: 105%;
+}
+
+.summary .sendOrder {
+  color: white;
+  background-color: #829460;
+  border-radius: 0;
+  margin-top: 8%;
+}
+
+@media only screen and (max-width:576px) {
+  .order {
+    margin-top: 13%;
+  }
+}
+
+/* -------------------------Finished Order Message------------------------------------- */
+.thankForOrder {
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 50%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.thankForOrder h6 {
+  margin-top: 2%;
+}
+
+.thankForOrder i {
+  margin-top: 4%;
+}
+
+@media only screen and (max-width:992px) {
+  .thankForOrder {
+    margin-top: 25%;
+    margin-bottom: 80%;
+  }
+
+  .thankForOrder i {
+    margin-top: 6%;
+  }
+}
+
+@media only screen and (max-width:576px) {
+  .thankForOrder {
+    margin-top: 35%;
+  }
+
+  .thankForOrder h2 {
+    font-size: 1.5em;
+  }
+
+  .thankForOrder h6 {
+    font-size: 1em;
+  }
+}
+
+/* ----------------------Contact ------------------------------------------------- */
+.contact{
+  margin-top: 15%;
+  margin-bottom: 23%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color:black;
+}
+
+.contact hr {
+  height: 5px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+
+}
+
+/* -------------------Footer---------------------- */
+
+
+.footer {
+  text-align: left;
+  margin-left: 16%;
+  margin-top: 10%;
+  margin-bottom: 2%;
+
+}
+
+.footer_item .first{
+  margin-bottom: 1%;
+}
+
+
+footer {
+  color: white;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}

@@ -1,0 +1,97 @@
+<%- include("partials/header") -%>
+
+<div class="cart">
+  <%cart.forEach(function(product){ %>
+    <div class="item" id=<%=product._id%> >
+      <div class="row ">
+        <div class="col-sm-1">
+
+        </div>
+        <div class="col-sm-5 row_1">
+          <h6>Product</h6>
+
+        </div>
+        <div class="col-sm-1 row_1">
+          <h6>Price</h6>
+
+        </div>
+        <div class="col-sm-2 row_1">
+          <h6>Quantity</h6>
+
+        </div>
+        <div class="col-sm-2 row_1 right">
+          <h6>Size</h6>
+
+        </div>
+        <div class="col-sm-1">
+
+        </div>
+
+      </div>
+
+      <div class="row ">
+        <div class="col-sm-1 ">
+
+        </div>
+
+        <div class="col-sm-2 row_2">
+              <img src="images/products/<%=product.name%>" alt="...">
+        </div>
+        <div class="col-sm-3 row_2">
+            <h6 > <%=product.label%></h6>
+            <form  action="/cart" method="post">
+              <input type="hidden" name="id" value='<%=product._id%>' >
+              <input type="hidden" name="size" value='<%=product.size%>'>
+              <button type="submit" class="btn btn-light"><i class="fa-regular fa-trash-can fa-xs"></i></button>
+            </form>
+
+
+        </div>
+
+
+        <div class="col-sm-1 row_2">
+          <h6 class="price" id=<%=product.price%>><%=Math.round(Number(product.price)*product.quantity*100)/100%></h6>
+
+        </div>
+        <div class="col-sm-2 row_2">
+          <input type="number"  min="1" oninput="validity.valid||(value='1');" class="quantity" name=<%=product._id%>  style="max-width:40px" value=<%=product.quantity%>>
+
+        </div>
+        <div class="col-sm-2 row_2 right">
+          <h6 ><%=product.size%></h6>
+
+        </div>
+        <div class="col-sm-1">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  <%})%>
+
+  <div class="completeOrderButton">
+    <a href="/cart/order"><button type="button" class="btn">PROCEED TO ORDER</button></a>
+  </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include("partials/footer") -%>

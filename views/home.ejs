@@ -1,0 +1,107 @@
+<%- include("partials/header") -%>
+
+<!-- carousel -->
+<div id="carouselExampleIndicators" class="carousel slide d-none d-sm-block" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100 img-fluid" src="images/home/carousel/image_back.jpg" alt="First slide">
+      <!-- <div class="caption">
+        <h3>"Life isn't perfect, but your outfit can be."</h3>
+        <p>it's about style</p>
+      </div> -->
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 img-fluid" src="images/home/carousel/image_back2.jpg" alt="Second slide">
+      <!-- <div class="caption">
+        <h3>"Life isn't perfect, but your outfit can be."</h3>
+        <p>it's about style</p>
+      </div> -->
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 img-fluid" src="images/home/carousel/image_back3.jpg" alt="Second slide">
+      <!-- <div class="caption">
+        <h3>"Life isn't perfect, but your outfit can be."</h3>
+        <p>it's about style</p>
+      </div> -->
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!-- -------------------------------------- Collections before categories--------------------------------- -->
+<div class="collection mt-5 ">
+  <div class="row">
+    <div class="col-lg-6 d-none d-lg-block season">
+      <div class="seasonCollectionCaption">
+        <div class="newSeasonTitle">
+          <h2>Fall-Winter Collections 2022</h2>
+          <div class="newSeasonText">
+            <p>New season, new arrivals! We believe our new Fall Collection is your dream come true! Check it out in our store today.</p>
+            <a href="/clothes/season=fall/page1"><button type="button" class="btn">CHECK</button></a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-lg-6 d-none d-lg-block season">
+      <div class="seasonCollectionImage">
+        <img src="images/home/season-collection/fall-image3.jpg">
+      </div>
+    </div>
+    <div class="col-6">
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ---------------------------------Products Categories----------------------------------- -->
+
+<div class="container-fluid mt-5 ">
+  <div class="row ">
+    <div class="col-sm-6 left">
+      <a href="/clothes/type=casual/page1"> <img src="images/home/categories/casualed.jpg"></a>
+    </div>
+
+    <div class="col-sm-6 right">
+      <a href="/clothes/type=formal/page1"><img src="images/home/categories/formaled.jpg"></a>
+    </div>
+
+
+  </div>
+  <div class="row " style="margin-top:1.2%;">
+
+    <div class="col-sm-6 left">
+      <a href="/clothes/type=lingerie/page1"><img src="images/home/categories/lingeried.jpg" alt=""></a>
+
+    </div>
+
+    <div class="col-sm-6 right">
+      <a href="/clothes/type=sports/page1"><img src="images/home/categories/sported.jpg" alt=""></a>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+<%- include("partials/footer") -%>
