@@ -1,12 +1,15 @@
 /* ------------ Navigation Bar --------------------- */
 .navbar {
   background-color: white;
+  font-size: 1.1rem;
 }
 
 .navbar-brand {
   margin-left: 5%;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
+  font-size: 1.5rem !important;
+
 }
 
 .navbar-nav {
@@ -20,6 +23,23 @@
 .nav-item#basket {
   margin-right: 0;
 }
+
+@media only screen and (max-width: 900px) {
+  .navbar{
+    font-size: 1.5rem;
+
+  }
+
+  .navbar-brand{
+    font-size: 50px !important;
+  }
+
+  .navbar-toggler {
+    height:  40%;
+    width: 40%;
+  }
+}
+
 
 /* ---------------------Shopping cart number of items--------------------------------- */
 #badge {
@@ -165,6 +185,13 @@ h3 {
   }
 }
 
+/* Small Screen make images bigger for mobile friendly website*/
+@media only screen and (max-width:756px) {
+  .card img {
+    width:100%;
+  }
+}
+
 /* ------------------------------------Single Product Page------------------------------------- */
 .product_page {
   margin-top: 8%;
@@ -227,16 +254,19 @@ h3 {
 .empty_cart {
   text-align: center;
   margin: 14% auto;
+  font-family: "Montserrat", sans-serif;
 }
 
 .empty_cart i {
   margin-top: 3%;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 756px) {
   .empty_cart {
     margin: 22% auto;
+    font-size: 1.5rem;
   }
+
 }
 
 /* -----------------------------------------Cart with items Page------------------------------------------- */
