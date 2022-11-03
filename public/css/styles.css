@@ -174,12 +174,7 @@ h3 {
   }
 }
 
-/* Small Screen make images bigger for mobile friendly website*/
-@media only screen and (max-width:756px) {
-  .card img {
-    width:100%;
-  }
-}
+
 
 /* ------------------------------------Single Product Page------------------------------------- */
 .product_page {
