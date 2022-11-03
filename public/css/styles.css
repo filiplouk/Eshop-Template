@@ -442,7 +442,7 @@ h3 {
   margin-bottom: 5%;
 }
 
-@media only screen and (max-width:576px) {
+@media only screen and (max-width:996px) {
   .contact i {
     margin-top:10%;
   }
