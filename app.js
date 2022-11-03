@@ -5,6 +5,8 @@ const bodyParser = require("body-parser");
 const session = require('express-session');
 const MongoStore = require('connect-mongo');
 const keygen = require("keygenerator");
+
+
 const app = express();
 
 require('dotenv').config();
@@ -13,11 +15,11 @@ require('dotenv').config();
 
 const mongoose = require("mongoose");
 
-mongoose.connect('mongodb://localhost:27017/eshopDB', {
+mongoose.connect('mongodb+srv://admin-filip:test123@cluster0.kl1kndo.mongodb.net/eshopDB', {
   useNewUrlParser: true
 });
 
-
+// mongodb://localhost:27017/eshopDB
 app.use(bodyParser.urlencoded({
   extended: true
 }));
@@ -29,17 +31,23 @@ app.use("/accessories", express.static('public'));
 app.use("/item", express.static('public'));
 app.use("/cart/order", express.static('public'));
 
-app.use("/cart/order/finish", express.static('public'))
+app.use("/cart/order/finish", express.static('public'));
+
+
+
+
 
 const store = MongoStore.create({
-  mongoUrl: 'mongodb://localhost:27017/eshopDB',
+  mongoUrl: 'mongodb+srv://admin-filip:test123@cluster0.kl1kndo.mongodb.net/eshopDB',
   crypto: {
-    secret: 'squirrel'
+    secret: process.env.MONGOSTORE_SECRET
   }
 })
 
+// 'mongodb://localhost:27017/eshopDB'
+
 app.use(session({
-  secret: 'My team,my way',
+  secret: process.env.SESSION_SECRET,
   resave: false,
   saveUninitialized: false,
   store: store,
@@ -592,6 +600,6 @@ app.get("/accessories/:page", function(req, res) {
 
 
 // ---------------------------Port listen --------------------------------
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, function() {
   console.log("Server started at port 3000");
 });

@@ -1,9 +1,6 @@
 // --------------------------Cart with items-----------------------------------------
 
 
-
-
-
 // Change price when number of product is changed & Post new items number to the server
 let quantity = document.querySelectorAll(".quantity");
 
@@ -36,4 +33,10 @@ let submitItemButton = document.querySelector(".button_info button");
 
 submitItemButton.addEventListener("click", function(event){
   document.querySelector("#basket span").innerHTML = Number(document.querySelector("#basket span").innerHTML)+1;
+});
+
+
+// ------------------------ SINLE PAGE CLOTH/ACC ZOOM IN AND OUT WHEN CLICKED ----------------
+document.querySelector(".product_img img").addEventListener("click", function(event){
+  this.classList.add("zoomIn");
 });

@@ -38,7 +38,7 @@
               <img src="images/products/<%=product.name%>" alt="...">
         </div>
         <div class="col-sm-3 row_2">
-            <h6 > <%=product.label%></h6>
+            <a href="/item/<%=product._id%>"<h6 > <%=product.label%></h6></a>
             <form  action="/cart" method="post">
               <input type="hidden" name="id" value='<%=product._id%>' >
               <input type="hidden" name="size" value='<%=product.size%>'>

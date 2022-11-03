@@ -52,7 +52,17 @@ h3 {
   text-align: center;
   color: white;
   font-style: italic;
+  padding: 2%;
 }
+
+@media only screen and (max-width: 756px) {
+  .caption{
+    position: absolute;
+    bottom: 30%;
+
+  }
+}
+
 
 
 
@@ -110,14 +120,7 @@ h3 {
     margin-top: 1%;
   }
 
-  .caption {
-    position: absolute;
-    bottom: 30%;
-    left: 5%;
-    text-align: center;
-    color: white;
-    font-style: italic;
-  }
+
 }
 
 
@@ -133,6 +136,8 @@ h3 {
 .card img {
   width: 60%;
 }
+
+
 
 .card a {
   color: inherit;
@@ -196,6 +201,12 @@ h3 {
   padding-left: 8%;
   padding-right: 8%;
   border: 1px solid #D8D8D8;
+}
+
+.zoomIn{
+  position: absolute;
+  bottom:10%;
+  z-index:0
 }
 
 @media only screen and (max-width:756px) {
@@ -267,6 +278,15 @@ h3 {
   left: 1%;
   bottom: 32%;
 }
+/* /Link to product page from cart  */
+.row_2 a{
+  color:inherit;
+}
+
+.row_2 a:hover{
+  color: inherit;
+}
+/* -------- */
 
 .right {
   border-right: 1px solid #EDDBC0;
@@ -420,8 +440,12 @@ h3 {
   height: 5px;
   margin-top: 5%;
   margin-bottom: 5%;
+}
 
-
+@media only screen and (max-width:576px) {
+  .contact i {
+    margin-top:10%;
+  }
 }
 
 /* -------------------Footer---------------------- */
@@ -444,4 +468,5 @@ footer {
   color: white;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
+  margin-top: 5%;
 }
