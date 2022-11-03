@@ -25,19 +25,8 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .navbar{
-    font-size: 1.5rem;
 
-  }
 
-  .navbar-brand{
-    font-size: 50px !important;
-  }
-
-  .navbar-toggler {
-    height:  40%;
-    width: 40%;
-  }
 }
 
 
@@ -125,18 +114,18 @@ h3 {
 }
 
 /* ------------------------- CATEGORIES HOME PAGE ---------------------------- */
-@media only screen and (min-width: 576px) {
-  .col-sm-6.left {
+@media only screen and (min-width: 768px) {
+  .col-md-6.left {
     padding-right: 0.5%;
   }
 
-  .col-sm-6.right {
+  .col-md-6.right {
     padding-left: 0.5%;
   }
 }
 
-@media only screen and (max-width: 576px) {
-  .col-sm-6.right {
+@media only screen and (max-width: 768px) {
+  .col-md-6.right {
     margin-top: 1%;
   }
 
