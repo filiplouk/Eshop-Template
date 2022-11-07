@@ -24,10 +24,7 @@
   margin-right: 0;
 }
 
-@media only screen and (max-width: 900px) {
 
-
-}
 
 
 /* ---------------------Shopping cart number of items--------------------------------- */
@@ -214,11 +211,7 @@ h3 {
   border: 1px solid #D8D8D8;
 }
 
-.zoomIn{
-  position: absolute;
-  bottom:10%;
-  z-index:0
-}
+
 
 @media only screen and (max-width:756px) {
   .product_page {
@@ -246,7 +239,7 @@ h3 {
 
 @media only screen and (max-width: 756px) {
   .empty_cart {
-    margin: 22% auto;
+    margin: 50% auto;
   }
 
 }
