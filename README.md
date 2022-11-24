@@ -32,5 +32,6 @@ stored with MongoStore.
 * Zoom In/ Zoom Out for the Images.
 * Online payment methods.
 
-Developed with love
-Achilles
+
+#### Developed with love
+#### Achilles
