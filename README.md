@@ -1,11 +1,14 @@
-# Eshop-Template / [https://arcane-hollows-07910.herokuapp.com/]
+# Eshop-Template  
 
 FAYS is a fashion eshop template with basic functionalities. It is made for development reasons only. Photos that are displayed derive from websites that provide 
 free images and so the products are not real. 
 
 FAYS is a good starting point for a developer who would like to design an eshop, to use it as template and alter it's components. 
 
-##Tools used for this project
+Link [https://arcane-hollows-07910.herokuapp.com/]
+
+
+## Tools used for this project
 
 * For the fronted, the main tools are HTML, CSS, JAVASCRIPT, EJS and BOOTSTRAP. Icons are all from fontawesome. 
 * For the backend, the main tools are Node.js , Express.js, MongoDB and Mongoose for the database.
@@ -16,18 +19,18 @@ FAYS is a good starting point for a developer who would like to design an eshop,
 stored with MongoStore.
 * The website is for now uploaded with Heroku Denos and MongoDB Atlas for the Database.
 
-##Functionalities of the Eshop
+## Functionalities of the Eshop
 
-*Navigate through products.
-*Basic filters at the home page (four categories of clothes).
-*Functional cart where the client can add products with specific size, remove products, change the number of items and proceed to order.
+* Navigate through products.
+* Basic filters at the home page (four categories of clothes).
+* Functional cart where the client can add products with specific size, remove products, change the number of items and proceed to order.
 
-##Functionalities that can be added or will be avaliable soon.
+## Functionalities that can be added or will be avaliable soon.
 
-*Filters at the clothes/accessories page.
-*Sort items by price, size etc.
-*Zoom In/ Zoom Out for the Images.
-*Online payment methods.
+* Filters at the clothes/accessories page.
+* Sort items by price, size etc.
+* Zoom In/ Zoom Out for the Images.
+* Online payment methods.
 
 Developed with love
-
+Achilles
