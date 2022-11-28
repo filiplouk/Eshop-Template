@@ -458,7 +458,7 @@ app.get("/cart/order", function(req, res) {
 
 app.post("/cart/order", function(req, res) {
 
-  const client = require("mailchimp-marketing");
+  const client = require("@mailchimp/mailchimp_marketing");
   client.setConfig({
     apiKey: process.env.API_ID,
     server: "us14",
