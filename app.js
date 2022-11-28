@@ -460,7 +460,7 @@ app.post("/cart/order", function(req, res) {
 
   const client = require("mailchimp-marketing");
   client.setConfig({
-    apiKey: "4cf52bc690b02fa1ffdbc42c2f2c1b3f-us14",
+    apiKey: process.env.API_ID,
     server: "us14",
   });
 
